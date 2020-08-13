@@ -75,5 +75,17 @@ public class Lesson {
      public String toString(){
          return subject + "(" + id + ")";
      }
+
+     // The 'Lesson' class has a @PlanningEntity annotation, 
+     // so Optaplanner knows that this class changes during 
+     // solving because it contains one or more planning variables.
+
+     // The 'timeslot' field has an @PlanningVariable annotation,
+     // so Optaplanner knows that it can change its value.
+     // In order to find potential 'Timeslot' instances to assign to this field,
+     // Optaplanner uses the 'valueRangeProviderRefs' property to connect
+     // to a value range provider that provides a 'List<Timeslot>' to pick from.
+
+     // The 'room' field also has an @PlanningVariable annotation, for same reasons.
     
 }
