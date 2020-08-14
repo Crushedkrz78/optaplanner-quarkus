@@ -37,7 +37,7 @@ public class Timeslot {
         return startTime;
     }
 
-    public LocalTime getEntTime(){
+    public LocalTime getEndTime(){
         return endTime;
     }
 

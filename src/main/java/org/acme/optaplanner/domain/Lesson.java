@@ -1,8 +1,10 @@
 package org.acme.optaplanner.domain;
 
+import org.optaplanner.core.api.domain.entity.PlanningEntity;
 import org.optaplanner.core.api.domain.lookup.PlanningId;
 import org.optaplanner.core.api.domain.variable.PlanningVariable;
 
+@PlanningEntity
 public class Lesson {
     /**
      * During a Lesson, represented by the Lesson class, a teacher teaches a subject to a group of students, for example:
